@@ -9,9 +9,9 @@ app.get('/', (req, res) => {
   res.send('Hello');
 });
 
-const privateKey = fs.readFileSync('path/to/private-key.pem', 'utf8');
-const certificate = fs.readFileSync('path/to/certificate.pem', 'utf8');
-const ca = fs.readFileSync('path/to/ca.pem', 'utf8');
+const privateKey = fs.readFileSync('./private-key.pem', 'utf8');
+const certificate = fs.readFileSync('./certificate.pem', 'utf8');
+const ca = fs.readFileSync('./ca.pem', 'utf8');
 
 const credentials = {
   key: privateKey,
